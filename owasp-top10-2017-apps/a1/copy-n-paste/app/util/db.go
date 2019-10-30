@@ -32,7 +32,7 @@ func OpenDBConnection() (*sql.DB, error) {
 	dbConn.SetMaxIdleConns(0)
 	dbConn.SetMaxOpenConns(40)
 	return dbConn, nil
-}
+} 
 
 //AuthenticateUser is the function that checks if the given user and password are valid or not
 func AuthenticateUser(user string, pass string) (bool, error) {
