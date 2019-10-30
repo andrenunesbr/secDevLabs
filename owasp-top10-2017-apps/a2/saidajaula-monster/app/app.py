@@ -37,6 +37,7 @@ def login_admin_required(f):
         return f(*args, **kwargs)
     return decorated_function
 
+  
 
 def login_required(f):
     @wraps(f)
@@ -128,3 +129,5 @@ def userInfo():
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=10082)
+
+    
